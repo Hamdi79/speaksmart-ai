@@ -6,6 +6,8 @@ import { Textarea } from '../components/ui/textarea';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs';
 import { Input } from '../components/ui/input';
 import { Mic, Volume2, RefreshCcw, Waveform } from 'lucide-react';
+/* global webkitSpeechRecognition */
+
 
 export default function SpeakSmartUI() {
   const [showOnboarding, setShowOnboarding] = useState(!localStorage.getItem('speaksmart_goal'));
